@@ -1,0 +1,5 @@
+<h1>{{ post.post_title }}</h1>
+<h3>発行日 {{ post.pub_date }}</h3>
+<body>{{ post.body }}</body>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>>{% endif %}

@@ -1,0 +1,23 @@
+①ubuntuはさんでanaconda（だめそうです）
+$ docker pull ubuntu:latest
+$ docker run --name ubuntu -i -t ubuntu:latest
+
+# apt-get update
+# apt-get install git aria2 curl wget bzip2
+# git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+…
+
+⇒ubuntuをベースにする場合pyenv入れてからanacondaを入れている記事しか見当たりませんでした
+⇒pyenvはanacondaとコンフリクトすることがあるらしく、辞めました
+
+②直でdockerからanaconda（よさそうです）
+$ docker pull continuumio/anaconda3
+$ docker run --name anaconda -i -t continuumio/anaconda3 /bin/bash
+
+
+cf Docker has some problems
+・docker desktop 起動中にWifiに接続できない（Windows10）
+・Issue with Wifi Adapter with Docker Windows (Native, HYPER-V)
+https://superuser.com/questions/1100336/issue-with-wifi-adapter-with-docker-windows-native-hyper-v
+
+・pyenv経由じゃないとdockerHubからpullできない
